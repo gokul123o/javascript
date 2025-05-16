@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user={
+            name:"Jhon"
+        }
+        let user2={};
+        for(let key in user)
+        {
+            user2[key]=user[key];
+        }
+        user2.name="Peter";
+        alert(user2.name);
+        alert(user.name);
+    </script>
+</body>
+</html>
