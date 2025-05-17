@@ -1,0 +1,14 @@
+.key
+{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+.keys
+{
+    display: flex;
+}
+kbd
+{
+    font-size: xx-large
+}
