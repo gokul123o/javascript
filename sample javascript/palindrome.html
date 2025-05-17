@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const word="malayalam"
+        function checkPalindrome(word)
+        {
+            const len=word.length
+            
+            for(let i=0;i<len/2;i++)
+            {
+                if(word[i]!==word[len-1-i])
+                {
+                    return "is not a palindrome"
+                }
+                else
+                {
+                    return "is palindrome"
+                }
+            }
+           
+            
+        } 
+        let value=checkPalindrome(word);
+        alert(value)
+    </script>
+</body>
+</html>
