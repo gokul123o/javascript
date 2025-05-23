@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumTo(n)
+        {
+            let sum=0;
+            for(i=0;i<=n;i++)
+            {
+                sum+=i;
+            }
+            return sum;
+        }
+        alert("for loop: Sum= "+sumTo(100));
+        function sumToRec(n)
+        {
+            let sum=0;
+            if(n==1)
+            {
+                return 1;
+            }
+            else
+            {
+                return n + sumToRec(n-1)
+            }
+        }
+        alert("using recursion Sum= "+sumToRec(100))
+        function sumArt(n)
+        {
+            if(n==1)
+            {
+                return 1;
+            }
+            else
+            {
+                return n*(n+1)/2;
+            }
+        }
+        alert("using formula sum= "+sumArt(100));
+    </script>
+</body>
+</html>
